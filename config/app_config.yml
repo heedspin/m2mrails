@@ -1,0 +1,52 @@
+# Override values from m2mhub_config.yml or add application-specific configs.
+app_config:
+  shared: &shared
+    email_name: LXD WebBot
+    email_address: webmin@lxdinc.com
+    sales_email_name: LXD Sales
+    sales_email_address: sales@lxdinc.com
+    email_domain: lxdinc.com
+    website: www.lxdinc.com
+    short_name: LXD
+    long_name: LXD Research &amp; Display
+    logo_image: logo.gif
+    quote_logo_image: quote_logo.jpg
+    use_boms: false
+    production_hostname: m2mhub.lxdinc.com
+    epoch_year: 2010
+    fob_groups:
+      - id: 1
+        name: Raleigh
+        default: true
+        members:
+          - our plant
+          - raleigh nc
+          - yd
+      - id: 2
+        name: China
+        members:
+          - HK
+          - SHANGHAI
+          - DDU:INDIA
+          - SHIJIAZHU
+          - CIF:BEIJI
+          - CIF:HK
+          - CIF:KOREA
+          - BEIJING
+    sales_report_not_revenue_accounts:
+      4009000:
+        # On Oct 31, 2012, LXD changed customer credit account from 4009000 to 1102100.
+        end_date: 2012-10-31
+      1102100:
+    use_item_revisions: false
+    menu_selected:
+  development:
+    <<: *shared
+    hostname: staging.lxdinc.com
+    inspection_task_default_lighthouse_user: 164362 # tim
+  production:
+    <<: *shared
+    hostname: m2mhub.lxdinc.com
+    inspection_task_default_lighthouse_user: 164371 # jim
+  test:
+    <<: *shared
