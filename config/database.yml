@@ -31,17 +31,17 @@ development:
   database: m2mRails_dev
   pool: 5
   timeout: 5000
-  username: root
-  password: password
+  username: xxxx
+  password: xxxxxxxx
 
 development_m2m:
   adapter: sqlserver
   mode: dblib
   host: 192.168.2.2
   tds_version: 70
-  database: M2MDATA99
-  username: sa
-  password: password
+  database: xxxxxxx
+  username: xxx
+  password: xxxxxxx
   timeout: 5000
   encoding: utf8
 
