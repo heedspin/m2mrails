@@ -24,13 +24,13 @@ gem 'jquery-ui-rails'
 if File.exists?('../m2mhub')
   gem 'm2mhub', :path => '../m2mhub'
 else
-  gem 'm2mhub', :git => 'git@github.com:heedspin/m2mhub.git'
+  gem 'm2mhub', :git => 'git://github.com/heedspin/m2mhub.git'
 end
 
 if File.exists?('../plutolib')
   gem 'plutolib', :path => '../plutolib'
 else
-  gem 'plutolib', :git => 'git@github.com:heedspin/plutolib.git'
+  gem 'plutolib', :git => 'git://github.com/heedspin/plutolib.git'
 end
 
 group :assets do
