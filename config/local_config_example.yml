@@ -1,0 +1,4 @@
+# Rename me to local_config.yml and edit.  Do not check in!
+local_config:
+  email_password: fill me in
+  sales_email_password: fill me in too

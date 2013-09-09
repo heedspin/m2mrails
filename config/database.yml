@@ -1,30 +1,3 @@
-## SQLite version 3.x
-##   gem install sqlite3
-##
-##   Ensure the SQLite 3 gem is defined in your Gemfile
-##   gem 'sqlite3'
-#development:
-#  adapter: sqlite3
-#  database: db/development.sqlite3
-#  pool: 5
-#  timeout: 5000
-#
-## Warning: The database defined as "test" will be erased and
-## re-generated from your development database when you run "rake".
-## Do not set this db to the same as development or production.
-#test:
-#  adapter: sqlite3
-#  database: db/test.sqlite3
-#  pool: 5
-#  timeout: 5000
-#
-#production:
-#  adapter: sqlite3
-#  database: db/production.sqlite3
-#  pool: 5
-#  timeout: 5000
-
- # From Tim Harrison - to get m2mHub running
 development:
   encoding: utf8
   adapter: mysql
@@ -37,7 +10,7 @@ development:
 development_m2m:
   adapter: sqlserver
   mode: dblib
-  host: 192.168.2.2
+  host: dev_sqlserver_hostname_or_ip_address
   tds_version: 70
   database: xxxxxxx
   username: xxx
@@ -48,7 +21,7 @@ development_m2m:
 production:
   encoding: utf8
   adapter: mysql
-  database: lxdhub_staging
+  database: m2mRails_prod
   pool: 5
   timeout: 5000
   username: root
@@ -56,10 +29,10 @@ production:
 production_m2m:
   adapter: sqlserver
   mode: dblib
-  host: mysqlserver.hostname
+  host: prod_sqlserver_hostname_or_ip_address
   tds_version: 70
-  database: my_production_database
-  username: sa
-  password: xyz
+  database: xxxxxxx
+  username: xxx
+  password: xxxxxxx
   timeout: 5000
   encoding: utf8
