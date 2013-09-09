@@ -15,8 +15,6 @@ gem 'hominid' # for mailchimper in plutolib
 gem 'trollop', '2.0' # Command-line parser.
 gem 'crxmake'
 gem 'useragent'
-gem 'ember-rails'
-gem 'ember-source', '1.0.0.rc6.2'
 gem 'json'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
